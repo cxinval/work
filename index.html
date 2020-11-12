@@ -1,0 +1,1753 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Онлайн склад</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<script src="https://kit.fontawesome.com/c98c580666.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__up">
+				<div class="header__left">
+					<a href="#" class="header__logo-link">
+						<img src="img/svg__icons/logo.svg" alt="logo" class="header__logo">
+					</a>
+					<p class="header__logo-text">Промышленный маркетплейс</p>
+				</div>
+				<div class="header__right">
+					<div class="header__place">
+						<img src="img/svg__icons/map.svg" alt="" class="header__place-img">
+						<p class="header__place-text">Набережные Челны</p>
+						<div class="region__wrap" id="headerPlace">
+							<div class="region__text">
+								<h2 class="region__title">Регион</h2>
+								<a href="#" class="region__subtitle">Очистить</a>
+							</div>
+							<div class="list">
+								<ul class="second__region">
+									<li>
+										<label class="check-label">
+											<svg class="region-icon" width="10" height="3" viewBox="0 0 10 3" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 1.625H10"  stroke-width="2"/>
+											</svg>
+											<input type="checkbox"/>
+											<div class="checkbox"></div>
+											<span class="lable__text">Россия</span>
+										</label>
+									</li>
+									<li>
+										<label class="check-label">
+											<svg class="region-icon" width="10" height="11" viewBox="0 0 10 11"  xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 5.625H10"  stroke-width="2"/>
+												<path d="M5 0.3125L5 10.9375"  stroke-width="2"/>
+											</svg>
+											<input type="checkbox"/>
+											<div class="checkbox"></div>
+											<span class="lable__text">Центр</span>
+										</label>
+									</li>
+									<li>
+										<label class="check-label">
+											<svg class="region-icon" width="10" height="11" viewBox="0 0 10 11"  xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 5.625H10"  stroke-width="2"/>
+												<path d="M5 0.3125L5 10.9375"  stroke-width="2"/>
+											</svg>
+											<input type="checkbox"/>
+											<div class="checkbox"></div>
+											<span class="lable__text">Северо-Запад</span>
+										</label>
+									</li>
+								</ul>
+								<ul class="third__region">
+									<li>
+										<label class="check-label">
+											<svg class="region-icon" width="10" height="3" viewBox="0 0 10 3" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 1.625H10"  stroke-width="2"/>
+											</svg>
+											<input type="checkbox"/>
+											<div class="checkbox"></div>
+											<span class="lable__text">Поволжье</span>
+										</label>
+									</li>
+					
+									<li>
+										<label class="check-label">
+											<svg class="region-icon" width="10" height="11" viewBox="0 0 10 11"  xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 5.625H10"  stroke-width="2"/>
+												<path d="M5 0.3125L5 10.9375"  stroke-width="2"/>
+											</svg>
+											<input type="checkbox"/>
+											<div class="checkbox"></div>
+											<span class="lable__text">Кировская область</span>
+										</label>
+									</li>
+									<li>
+										<label class="check-label">
+											<svg class="region-icon" width="10" height="11" viewBox="0 0 10 11"  xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 5.625H10"  stroke-width="2"/>
+												<path d="M5 0.3125L5 10.9375"  stroke-width="2"/>
+											</svg>
+											<input type="checkbox"/>
+											<div class="checkbox"></div>
+											<span class="lable__text">Нижегородская область</span>
+										</label>
+									</li>
+									<li>
+										<label class="check-label">
+											<svg class="region-icon" width="10" height="11" viewBox="0 0 10 11"  xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 5.625H10"  stroke-width="2"/>
+												<path d="M5 0.3125L5 10.9375"  stroke-width="2"/>
+											</svg>
+											<input type="checkbox"/>
+											<div class="checkbox"></div>
+											<span class="lable__text">Оренбургская область</span>
+										</label>
+									</li>
+									<li class="almetevsk__region region">
+										<label class="check-label">
+											<svg class="region-icon" width="10" height="3" viewBox="0 0 10 3" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 1.625H10"  stroke-width="2"/>
+											</svg>
+											<input type="checkbox"/>
+											<div class="checkbox"></div>
+											<span class="lable__text">Республика Татарстан</span>
+										</label>
+									</li>
+								</ul>
+								<ul class="fourth__region">
+									<li class="bugulma__region region">
+										<label class="check-label">
+											<input type="checkbox"/>
+											<div class="checkbox"></div>
+											<span class="lable__text">Альметьевск</span>
+										</label>
+									</li>
+									<li class="kazan__region region">
+										<label class="check-label">
+											<input type="checkbox"/>
+											<div class="checkbox"></div>
+											<span class="lable__text">Бугульма</span>
+										</label>
+									</li>
+									<li class="naberej__region region">
+										<label class="check-label">
+											<input type="checkbox"/>
+											<div class="checkbox"></div>
+											<span class="lable__text">Казань</span>
+										</label>
+									</li>
+									<li class="nijnekamsk__region region">
+										<label class="check-label">
+											<input type="checkbox"/>
+											<div class="checkbox"></div>
+											<span class="lable__text">Набережные Челны</span>
+										</label>
+									</li>
+									<li class="nijnekamsk__region region">
+										<label class="check-label">
+											<input type="checkbox"/>
+											<div class="checkbox"></div>
+											<span class="lable__text">Нижнекамск</span>
+										</label>
+									</li>
+								</ul>
+							</div>
+							<div class="region__footer">
+								<p class="region__footer-title">Россия, Татарстан,<span class="region__footer-span">Наережные Челны</span>
+								</p>
+								<a href="#" class="region__footer-btn">Выбрать</a>
+							</div>
+						</div>
+					</div>
+					<div class="header__crate">
+						<img src="img/crate__img.svg" alt="" class="header__crate-img">
+						<div class="crate__block">
+							<p class="crate__block-text"><span class="crate__text-point">В заказе</span> 5 товаров</p>
+							<b class="cate__block-price">245 810 р.</b>
+						</div>
+							<div class="crate__minmenu-wrap" id="crateMinmenu">
+								<div class="headerr__crate">
+									<h2 class="headerr__crate-title">Состав заказа (36 товаров)</h2>
+									<p class="headerr__crate-subtitle">Очистить заказ</p>
+								</div>
+								<div class="items__crate">
+									<div class="items__crate-scroll">
+										<div class="items__crate-field"></div>
+									</div>
+									<div class="crate__item">
+										<img src="img/product/product__img1.jpg" alt="" class="crate__item-img">
+										<div class="crate__item-name">
+											<p class="crate__name-title">Трансформатор тока ТТИ- 60 0 5 600-5А ИЭК</p>
+											<p class="crate__name-price">в наличии: 1 321 <span class="crate__price-span">шт.</span> </p>
+											<p class="crate__name-seller">Продавец: Самарский Трансформатор</p>
+										</div>
+										<div class="crate__item-price">
+											<p class="crate__price-title">11 049,96 р.</p>
+											<p class="crate__price-subtitle">920,83 р. за шт.</p>
+										</div>
+										<div class="crate__item-number">
+											<svg class="crate__number-icon" width="10" height="3" viewBox="0 0 10 3" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 1.625H10"  stroke-width="2"/>
+											</svg>
+												
+											<p class="crate__number-title">12</p>
+						
+											<svg class="crate__number-icon" width="10" height="11" viewBox="0 0 10 11"  xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 5.625H10"  stroke-width="2"/>
+												<path d="M5 0.3125L5 10.9375"  stroke-width="2"/>
+											</svg>
+						
+											<svg class="crate__number-icon" width="12" height="17" viewBox="0 0 12 17"  xmlns="http://www.w3.org/2000/svg">
+												<rect x="2" y="3.125" width="8" height="12.875"  stroke-width="2"/>
+												<rect x="0.53125" y="2.65625" width="10.9375" height="1.0625"  stroke-width="1.0625"/>
+												<rect x="5" y="1" width="2" height="2.25"  stroke-width="2"/>
+											</svg>
+												
+												
+										</div>
+									</div>
+									<div class="crate__item">
+										<img src="img/product/product__img1.jpg" alt="" class="crate__item-img">
+										<div class="crate__item-name">
+											<p class="crate__name-title">Трансформатор тока ТТИ- 60 0 5 600-5А ИЭК</p>
+											<p class="crate__name-price">в наличии: 1 321 <span class="crate__price-span">шт.</span> </p>
+											<p class="crate__name-seller">Продавец: Самарский Трансформатор</p>
+										</div>
+										<div class="crate__item-price">
+											<p class="crate__price-title">11 049,96 р.</p>
+											<p class="crate__price-subtitle">920,83 р. за шт.</p>
+										</div>
+										<div class="crate__item-number">
+											<svg class="crate__number-icon" width="10" height="3" viewBox="0 0 10 3" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 1.625H10"  stroke-width="2"/>
+											</svg>
+												
+											<p class="crate__number-title">12</p>
+						
+											<svg class="crate__number-icon" width="10" height="11" viewBox="0 0 10 11"  xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 5.625H10"  stroke-width="2"/>
+												<path d="M5 0.3125L5 10.9375"  stroke-width="2"/>
+											</svg>
+						
+											<svg class="crate__number-icon" width="12" height="17" viewBox="0 0 12 17"  xmlns="http://www.w3.org/2000/svg">
+												<rect x="2" y="3.125" width="8" height="12.875"  stroke-width="2"/>
+												<rect x="0.53125" y="2.65625" width="10.9375" height="1.0625"  stroke-width="1.0625"/>
+												<rect x="5" y="1" width="2" height="2.25"  stroke-width="2"/>
+											</svg>
+												
+												
+										</div>
+									</div>
+									<div class="crate__item">
+										<img src="img/product/product__img1.jpg" alt="" class="crate__item-img">
+										<div class="crate__item-name">
+											<p class="crate__name-title">Трансформатор тока ТТИ- 60 0 5 600-5А ИЭК</p>
+											<p class="crate__name-price">в наличии: 1 321 <span class="crate__price-span">шт.</span> </p>
+											<p class="crate__name-seller">Продавец: Самарский Трансформатор</p>
+										</div>
+										<div class="crate__item-price">
+											<p class="crate__price-title">11 049,96 р.</p>
+											<p class="crate__price-subtitle">920,83 р. за шт.</p>
+										</div>
+										<div class="crate__item-number">
+											<svg class="crate__number-icon" width="10" height="3" viewBox="0 0 10 3" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 1.625H10"  stroke-width="2"/>
+											</svg>
+												
+											<p class="crate__number-title">12</p>
+						
+											<svg class="crate__number-icon" width="10" height="11" viewBox="0 0 10 11"  xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 5.625H10"  stroke-width="2"/>
+												<path d="M5 0.3125L5 10.9375"  stroke-width="2"/>
+											</svg>
+						
+											<svg class="crate__number-icon" width="12" height="17" viewBox="0 0 12 17"  xmlns="http://www.w3.org/2000/svg">
+												<rect x="2" y="3.125" width="8" height="12.875"  stroke-width="2"/>
+												<rect x="0.53125" y="2.65625" width="10.9375" height="1.0625"  stroke-width="1.0625"/>
+												<rect x="5" y="1" width="2" height="2.25"  stroke-width="2"/>
+											</svg>
+												
+												
+										</div>
+									</div>
+									<div class="crate__item">
+										<img src="img/product/product__img1.jpg" alt="" class="crate__item-img">
+										<div class="crate__item-name">
+											<p class="crate__name-title">Трансформатор тока ТТИ- 60 0 5 600-5А ИЭК</p>
+											<p class="crate__name-price">в наличии: 1 321 <span class="crate__price-span">шт.</span> </p>
+											<p class="crate__name-seller">Продавец: Самарский Трансформатор</p>
+										</div>
+										<div class="crate__item-price">
+											<p class="crate__price-title">11 049,96 р.</p>
+											<p class="crate__price-subtitle">920,83 р. за шт.</p>
+										</div>
+										<div class="crate__item-number">
+											<svg class="crate__number-icon" width="10" height="3" viewBox="0 0 10 3" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 1.625H10"  stroke-width="2"/>
+											</svg>
+												
+											<p class="crate__number-title">12</p>
+						
+											<svg class="crate__number-icon" width="10" height="11" viewBox="0 0 10 11"  xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 5.625H10"  stroke-width="2"/>
+												<path d="M5 0.3125L5 10.9375"  stroke-width="2"/>
+											</svg>
+						
+											<svg class="crate__number-icon" width="12" height="17" viewBox="0 0 12 17"  xmlns="http://www.w3.org/2000/svg">
+												<rect x="2" y="3.125" width="8" height="12.875"  stroke-width="2"/>
+												<rect x="0.53125" y="2.65625" width="10.9375" height="1.0625"  stroke-width="1.0625"/>
+												<rect x="5" y="1" width="2" height="2.25"  stroke-width="2"/>
+											</svg>
+												
+												
+										</div>
+									</div>
+									<div class="crate__item">
+										<img src="img/product/product__img1.jpg" alt="" class="crate__item-img">
+										<div class="crate__item-name">
+											<p class="crate__name-title">Трансформатор тока ТТИ- 60 0 5 600-5А ИЭК</p>
+											<p class="crate__name-price">в наличии: 1 321 <span class="crate__price-span">шт.</span> </p>
+											<p class="crate__name-seller">Продавец: Самарский Трансформатор</p>
+										</div>
+										<div class="crate__item-price">
+											<p class="crate__price-title">11 049,96 р.</p>
+											<p class="crate__price-subtitle">920,83 р. за шт.</p>
+										</div>
+										<div class="crate__item-number">
+											<svg class="crate__number-icon" width="10" height="3" viewBox="0 0 10 3" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 1.625H10"  stroke-width="2"/>
+											</svg>
+												
+											<p class="crate__number-title">12</p>
+						
+											<svg class="crate__number-icon" width="10" height="11" viewBox="0 0 10 11"  xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 5.625H10"  stroke-width="2"/>
+												<path d="M5 0.3125L5 10.9375"  stroke-width="2"/>
+											</svg>
+						
+											<svg class="crate__number-icon" width="12" height="17" viewBox="0 0 12 17"  xmlns="http://www.w3.org/2000/svg">
+												<rect x="2" y="3.125" width="8" height="12.875"  stroke-width="2"/>
+												<rect x="0.53125" y="2.65625" width="10.9375" height="1.0625"  stroke-width="1.0625"/>
+												<rect x="5" y="1" width="2" height="2.25"  stroke-width="2"/>
+											</svg>
+													
+										</div>
+									</div>
+									<div class="crate__item">
+										<img src="img/product/product__img1.jpg" alt="" class="crate__item-img">
+										<div class="crate__item-name">
+											<p class="crate__name-title">Трансформатор тока ТТИ- 60 0 5 600-5А ИЭК</p>
+											<p class="crate__name-price">в наличии: 1 321 <span class="crate__price-span">шт.</span> </p>
+											<p class="crate__name-seller">Продавец: Самарский Трансформатор</p>
+										</div>
+										<div class="crate__item-price">
+											<p class="crate__price-title">11 049,96 р.</p>
+											<p class="crate__price-subtitle">920,83 р. за шт.</p>
+										</div>
+										<div class="crate__item-number">
+											<svg class="crate__number-icon" width="10" height="3" viewBox="0 0 10 3" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 1.625H10"  stroke-width="2"/>
+											</svg>
+												
+											<p class="crate__number-title">12</p>
+						
+											<svg class="crate__number-icon" width="10" height="11" viewBox="0 0 10 11"  xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 5.625H10"  stroke-width="2"/>
+												<path d="M5 0.3125L5 10.9375"  stroke-width="2"/>
+											</svg>
+						
+											<svg class="crate__number-icon" width="12" height="17" viewBox="0 0 12 17"  xmlns="http://www.w3.org/2000/svg">
+												<rect x="2" y="3.125" width="8" height="12.875"  stroke-width="2"/>
+												<rect x="0.53125" y="2.65625" width="10.9375" height="1.0625"  stroke-width="1.0625"/>
+												<rect x="5" y="1" width="2" height="2.25"  stroke-width="2"/>
+											</svg>
+												
+												
+										</div>
+									</div>
+									<div class="carte__footer">
+										<button class="crate__button">Оформить заказ</button>
+										<p class="carte__footer-text">Всего:<span class="crate__footer-span">36 049,96</span>р.</p>
+									</div>
+								</div>
+							</div>
+					</div>
+					<div class="header__login">
+						<img src="img/svg__icons/login.svg" alt="" class="header__login-img">
+						<p class="header__login-text">Войти</p>
+						<div class="header__card-minmenu" id="headerLogin">
+							
+							<div class="card__minmenu-wrap" >
+								<h2 class="card__menu-tittle">Личный кабинет</h2>
+								<div class="card__minmenu-link">
+									<svg class="card__minmenu-icons" width="37" height="30" viewBox="0 0 37 30" fill="none" xmlns="http://www.w3.org/2000/svg" card__minmenu-icons>
+										<path d="M7.4002 15.0001H3.7002V21.2501M16.0335 23.7501H8.63353"
+											stroke="#262526" stroke-width="2" />
+										<path d="M27.1343 17.5001H34.5343" stroke="#262526" stroke-width="2" />
+										<path d="M26.2344 0.00012207V26.2501H36.9999" stroke="#262526"
+											stroke-width="2" />
+										<path
+											d="M26.1331 23.7501C26.1331 26.6623 23.8073 29.0001 20.9665 29.0001C18.1256 29.0001 15.7998 26.6623 15.7998 23.7501C15.7998 20.8379 18.1256 18.5001 20.9665 18.5001C23.8073 18.5001 26.1331 20.8379 26.1331 23.7501Z"
+											stroke="#262526" stroke-width="2" />
+										<path
+											d="M8.86667 24.9999C8.86667 27.2217 7.09304 28.9999 4.93333 28.9999C2.77362 28.9999 1 27.2217 1 24.9999C1 22.778 2.77362 20.9999 4.93333 20.9999C7.09304 20.9999 8.86667 22.778 8.86667 24.9999Z"
+											stroke="#262526" stroke-width="2" />
+										<path
+											d="M20.9666 18.7502L17.2666 2.50024H7.3999V15.0002L14.1832 18.7502H20.9666Z"
+											stroke="#262526" stroke-width="2" />
+									</svg>
+									Закзазы
+								</div>
+								<a href="#" class="card__minmenu-link">
+									<svg class="card__minmenu-icons" width="15" height="20" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg" card__minmenu-icons>
+										<path
+											d="M6.5625 8H7.5625V7V1H14V19H1V8H6.5625ZM5.5625 6H2.30823L4.01079 4.18394L5.5625 2.52878V6ZM3.75 16H8.4375V14H3.75V16ZM3.75 13H11.25V11H3.75V13Z"
+											stroke="#041214" stroke-width="2" />
+									</svg>
+									Заявки на закупку
+								</a>
+								<a href="#" class="card__minmenu-link">
+									<svg width="18" height="20" viewBox="0 0 18 20" fill="none"
+										xmlns="http://www.w3.org/2000/svg" class="card__minmenu-icons">
+										<path
+											d="M17 15.6215V19H1V15.6215L6.06778 13.1189L6.625 12.8437V12.2222V11.1111V10.7745L6.4214 10.5063L6.10521 10.09C5.34763 9.09232 4.9375 7.87408 4.9375 6.62139V5.52876C4.9375 3.91654 5.89087 2.45688 7.36712 1.80886C8.40778 1.35206 9.59221 1.35206 10.6329 1.80886C12.1091 2.45688 13.0625 3.91654 13.0625 5.52876V6.62139C13.0625 7.87408 12.6524 9.09232 11.8948 10.09L11.5786 10.5063L11.375 10.7745V11.1111V12.2222V12.8437L11.9322 13.1189L17 15.6215Z"
+											stroke="#041214" stroke-width="2" />
+									</svg>
+									Профиль
+								</a>
+								<a href="#" class="card__minmenu-link card__exit">
+									<svg class="card__minmenu-icons" width="24" height="22" viewBox="0 0 24 22"
+										fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M14.6501 8V1H1.00015V21H14.6501V14" stroke="#262526"
+											stroke-width="2" />
+										<path
+											d="M17.8001 6.55554L22.0001 11M22.0001 11L17.8001 15.4444M22.0001 11H9.40015"
+											stroke="#262526" stroke-width="2" />
+									</svg>
+									Выход
+								</a>
+	
+							</div>
+						</div>
+					</div>
+					
+				</div>
+
+			</div>
+			<!-- /Header__UP -->
+			<div class="header__down">
+				<div class="header__down-left">
+					<div class="header__category">
+						<a href="" class="header__category-text">Все категории</a> 
+						<svg class="header__category-burger" width="16" height="12" viewBox="0 0 16 12"  xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 1H16"  stroke-width="2"/>
+							<path d="M0 6H16"  stroke-width="2"/>
+							<path d="M0 11H16"  stroke-width="2"/>
+						</svg>
+					</div>
+					<div class="header__minmenu active">
+						<div class="header__minmenu-wrap" id="headmin">
+							
+							<div class="mimnmenu-header">
+								<div class="minmenu__up">
+									<svg class="up__icon" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.63672 1L14.3646 13.7279" stroke="black" stroke-width="2"/>
+										<path d="M14.3643 1.00024L1.63633 13.7282" stroke="black" stroke-width="2"/>
+									</svg>
+									<a href="#" class="minmenu__logo-link">
+										<img src="img/svg__icons/logo.svg" alt="logo" class="minmenu__logo">
+									</a>
+									<div class="minenu__crate">
+										<img src="img/crate__img.svg" alt="" class="header__crate-img">
+
+
+										<div class="minmenu__block">
+											<p class="crate__block-text"><span class="minmenu__text-point"> 5 товаров</p>
+											<b class="minmenu__block-price">245 810 р.</b>
+										</div>
+									</div>
+								</div>
+								<div class="minmenu__center">
+									<div class="minmenu__header-login">
+										<svg class="minmenu__login-icon" width="19" height="20" viewBox="0 0 19 20"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M4.99951 7.29982V0.999756H17.9997V19H4.99951V12.6999" stroke-width="2" />
+											<path d="M8.00009 5.99976L12.0001 9.9998M12.0001 9.9998L8.00009 13.9998M12.0001 9.9998H0"
+												stroke-width="2" />
+										</svg>
+										<a href="#" class="minmenu__login">Войти на сайт</a>
+									</div>
+									<div class="minmenu__header-region">
+										<svg class="minmenu__region-icon" width="22" height="22" viewBox="0 0 22 22"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M6.20711 6.20711C8.85415 3.56007 13.1459 3.56007 15.7929 6.20711C18.4399 8.85415 18.4399 13.1459 15.7929 15.7929L11 20.5858L6.20711 15.7929C3.56007 13.1459 3.56007 8.85415 6.20711 6.20711Z"
+												stroke-width="2" />
+											<circle cx="11.0004" cy="11.0001" r="2.05556" stroke-width="2" />
+										</svg>
+										<a href="#" class="minmenu__region">Набережные Челны</a>
+									</div>
+								</div>
+								<div class="minmenu__down">
+									<div class="header__minmenu-search1">
+										<svg class="minmenu__region-icon" width="17" height="16" viewBox="0 0 17 16"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M2.49997 6.44227C2.49997 9.30989 4.73851 11.6345 7.49989 11.6345C10.2613 11.6345 12.4998 9.30989 12.4998 6.44227C12.4998 3.57466 10.2613 1.25 7.49989 1.25M6.4999 1.25H0.5M6.4999 4.36536H0.5"
+												stroke-width="2" />
+											<path d="M15.4998 14.7504L11.4165 10.51" stroke-width="2" />
+											<path
+												d="M2.49997 6.44227C2.49997 9.30989 4.73851 11.6345 7.49989 11.6345C10.2613 11.6345 12.4998 9.30989 12.4998 6.44227C12.4998 3.57466 10.2613 1.25 7.49989 1.25M6.4999 1.25H0.5M6.4999 4.36536H0.5"
+												stroke-width="2" />
+											<path d="M15.4998 14.7504L11.4165 10.51" stroke-width="2" />
+										</svg>
+										<a href="#" class="minmenu__search1">Расширенный поиск</a>
+									</div>
+									<div class="header__minmenu-search2">
+										<svg class="minmenu__region-icon" width="17" height="16" viewBox="0 0 17 16"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M10.0882 7.55012C10.0882 9.99891 8.14713 11.9501 5.79412 11.9501C3.44111 11.9501 1.5 9.99891 1.5 7.55012C1.5 5.10133 3.44111 3.15015 5.79412 3.15015C8.14713 3.15015 10.0882 5.10133 10.0882 7.55012Z"
+												stroke-width="2" />
+											<path
+												d="M10.2061 1.25C12.4583 1.25 14.284 3.18144 14.284 5.56399C14.284 6.79567 13.7961 7.90679 13.0136 8.69284L15.5002 11.2292"
+												stroke-width="2" />
+											<path d="M12.8525 14.7502L9.24951 11.0752" stroke-width="2" />
+										</svg>
+				
+										<a href="#" class="minmenu__search2">Множественный поиск </a>
+									</div>
+								</div>
+							</div>
+							<div class="header__minmenu-links">
+								<a href="#" class="header__minmenu-link">Трансформаторы <span class="header__link-select">(16
+										320)</span></a>
+								<a href="#" class="header__minmenu-link">Светотехника <span class="header__link-select">(10
+										300)</span></a>
+								<a href="#" class="header__minmenu-link">Шкафы и щиты <span class="header__link-select">(8
+										100)</span></a>
+								<a href="#" class="header__minmenu-link">Оборудование 6-10кВ <span class="header__link-select">(6
+										320)</span></a>
+								<a href="#" class="header__minmenu-link">Инструмент <span class="header__link-select">(5
+										320)</span></a>
+								<a href="#" class="header__minmenu-link">Обогрев и вентиляция <span class="header__link-select">(4
+										670)</span></a>
+								<a href="#" class="header__minmenu-link">Розетки и выключатели <span class="header__link-select">(3
+										460)</span></a>
+								<a href="#" class="header__minmenu-link">Изделия для электромонтажа <span class="header__link-select">(2
+										380)</span></a>
+								<a href="#" class="header__minmenu-link">Низковольтное оборудование <span class="header__link-select">(1
+										020)</span></a>
+								<a href="#" class="header__minmenu-link">Кабели и провода <span
+										class="header__link-select">(520)</span></a>
+								<a href="#" class="header__minmenu-link">Безопасность <span class="header__link-select">(120)</span></a>
+							</div>
+				
+						</div>
+					</div>
+					<div class="search">
+						<input type="text" class="header__search" placeholder="Найти нужный товар из 33055">
+						<svg class="search-icon" width="21" height="21" viewBox="0 0 21 21"
+							xmlns="http://www.w3.org/2000/svg">
+							<circle cx="8.57137" cy="8.57137" r="7.57137" stroke-width="2" />
+							<path d="M19.9993 19.9999L14.166 14.1666" stroke-width="2" />
+						</svg>
+						<div class="search__list">
+							<div class="list__product">
+								<div class="list__product-name">
+									<svg class="list__product-icon" width="16" height="16" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+										<rect x="1" y="7.81335" width="14" height="7.1866"  stroke-width="2"/>
+										<path d="M1.59985 10.9474H15.1999"  stroke-width="2"/>
+										<rect x="9" y="1" width="6" height="6.42105"  stroke-width="2"/>
+										<path d="M12 0.842102V3.36842"  stroke-width="2"/>
+										<rect x="5" y="3.52625" width="3.6" height="3.89474" stroke-width="2"/>
+									</svg>
+									<p class="list__product-text"> Товары </p>
+								</div>
+
+								<div class="list__product-category">
+									<p class="list__category-text"><span class="list__category-tittle">Трансформатор</span>ТМГ</p>
+									<p class="list__category-text"><span class="list__category-tittle">Трансформатор</span>тока (ТОЛ)ТЛК-СТ-10-ТПЛ (ТПЛ-10с) проходной</p>
+									<p class="list__category-text"><span class="list__category-tittle">Трансформатор</span>силовой масляный ТМГ - 250 / 10-0.4</p>
+								</div>	
+							</div>
+							<div class="list__provaider">
+								<div class="list__product-name">
+									<svg class="list__product-icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+										<path d="M15 12.6499V15H1V12.6499L5.40614 10.6916L6 10.4277V9.77778V8.88889V8.52338L5.76429 8.24402L5.20713 7.58367C4.75048 7.04247 4.5 6.35718 4.5 5.64906V4.49837C4.5 3.26699 5.25247 2.16065 6.39772 1.70821L6.89772 1.51068C7.60594 1.23089 8.39406 1.23089 9.10228 1.51068L9.60228 1.70821C10.7475 2.16065 11.5 3.26698 11.5 4.49837V5.64906C11.5 6.35718 11.2495 7.04247 10.7929 7.58367L10.2357 8.24402L10 8.52338V8.88889V9.77778V10.4277L10.5939 10.6916L15 12.6499Z" stroke-width="2"/>
+									</svg>
+									<p class="list__product-text">Поставщики</p>
+								</div>
+								
+								<div class="provaider__list">
+									<p class="provaider__list">Самарский<span class="provaider__list-title">трансформатор</span></p>
+								</div>
+									
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header__down-right">
+					<a class="search__expanded">
+						<p class="search__expanded-text">Расширенный поиск</p>
+						<img src="img/svg__icons/search__full.svg" alt="" class="search__expanded-img">
+					</a>
+					<a class="search__multiple">
+						<p class="search__multiple-text">Множественный поиск </p>
+						<img src="img/svg__icons/search__mult.svg" alt="" class="search__multiple-img">
+					</a>
+				</div>
+			</div>
+			<!-- Header__down -->
+		</div>
+		<div class="headerr__scroll">
+			<div class="container">
+				<div class="header__scroll-menu">
+					<div class="scroll__left">
+						<div class="scroll__category">
+							<a href="" class="scroll__category-text">Все категории</a> 
+							<svg class="header__category-burger" width="16" height="12" viewBox="0 0 16 12"  xmlns="http://www.w3.org/2000/svg">
+								<path d="M0 1H16"  stroke-width="2"/>
+								<path d="M0 6H16"  stroke-width="2"/>
+								<path d="M0 11H16"  stroke-width="2"/>
+							</svg>
+						</div>
+						<div class="scroll__minmenuu">
+							<div class="scroll__minmenu-wrap">
+								<a href="#" class="header__minmenu-link">Трансформаторы <span
+										class="header__link-select">(16
+										320)</span></a>
+								<a href="#" class="header__minmenu-link">Светотехника <span
+										class="header__link-select">(10
+										300)</span></a>
+								<a href="#" class="header__minmenu-link">Шкафы и щиты <span
+										class="header__link-select">(8
+										100)</span></a>
+								<a href="#" class="header__minmenu-link">Оборудование 6-10кВ <span
+										class="header__link-select">(6 320)</span></a>
+								<a href="#" class="header__minmenu-link">Инструмент <span class="header__link-select">(5
+										320)</span></a>
+								<a href="#" class="header__minmenu-link">Обогрев и вентиляция <span
+										class="header__link-select">(4 670)</span></a>
+								<a href="#" class="header__minmenu-link">Розетки и выключатели <span
+										class="header__link-select">(3 460)</span></a>
+								<a href="#" class="header__minmenu-link">Изделия для электромонтажа <span
+										class="header__link-select">(2 380)</span></a>
+								<a href="#" class="header__minmenu-link">Низковольтное оборудование <span
+										class="header__link-select">(1 020)</span></a>
+								<a href="#" class="header__minmenu-link">Кабели и провода <span
+										class="header__link-select">(520)</span></a>
+								<a href="#" class="header__minmenu-link">Безопасность <span
+										class="header__link-select">(120)</span></a>
+							</div>
+						</div>
+						<div class="search__scroll">
+							<input type="text" class="scroll__search" placeholder="Найти нужный товар из 33055">
+							<div class="scroll__icons">
+								<img src="img/svg__icons/search__full.svg" alt="" class="scroll__expanded-img">
+								<img src="img/svg__icons/search__mult.svg" alt="" class="search__multiple-img">
+							</div>
+							<div class="scroll-search__list">
+								<div class="list__product">
+									<div class="list__product-name">
+										<svg class="list__product-icon" width="16" height="16" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg">
+											<rect x="1" y="7.81335" width="14" height="7.1866"  stroke-width="2"/>
+											<path d="M1.59985 10.9474H15.1999"  stroke-width="2"/>
+											<rect x="9" y="1" width="6" height="6.42105"  stroke-width="2"/>
+											<path d="M12 0.842102V3.36842"  stroke-width="2"/>
+											<rect x="5" y="3.52625" width="3.6" height="3.89474" stroke-width="2"/>
+										</svg>
+										<p class="list__product-text"> Товары </p>
+									</div>
+	
+									<div class="list__product-category">
+										<p class="list__category-text"><span class="list__category-tittle">Трансформатор</span>ТМГ</p>
+										<p class="list__category-text"><span class="list__category-tittle">Трансформатор</span>тока (ТОЛ)ТЛК-СТ-10-ТПЛ (ТПЛ-10с) проходной</p>
+										<p class="list__category-text"><span class="list__category-tittle">Трансформатор</span>силовой масляный ТМГ - 250 / 10-0.4</p>
+									</div>	
+								</div>
+								<div class="list__provaider">
+									<div class="list__product-name">
+										<svg class="list__product-icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path d="M15 12.6499V15H1V12.6499L5.40614 10.6916L6 10.4277V9.77778V8.88889V8.52338L5.76429 8.24402L5.20713 7.58367C4.75048 7.04247 4.5 6.35718 4.5 5.64906V4.49837C4.5 3.26699 5.25247 2.16065 6.39772 1.70821L6.89772 1.51068C7.60594 1.23089 8.39406 1.23089 9.10228 1.51068L9.60228 1.70821C10.7475 2.16065 11.5 3.26698 11.5 4.49837V5.64906C11.5 6.35718 11.2495 7.04247 10.7929 7.58367L10.2357 8.24402L10 8.52338V8.88889V9.77778V10.4277L10.5939 10.6916L15 12.6499Z" stroke-width="2"/>
+										</svg>
+										<p class="list__product-text">Поставщики</p>
+									</div>
+									
+									<div class="provaider__list">
+										<p class="provaider__list">Самарский<span class="provaider__list-title">трансформатор</span></p>
+									</div>
+										
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="scroll__right">
+						<div class="scroll__place">
+							<img src="img/svg__icons/map.svg" alt="" class="scroll__place-img">
+							<p class="scroll__place-text">Набережные Челны</p>
+							<div class="scrollregion__wrap" id="scrollRegion">
+								<div class="region__text">
+									<h2 class="region__title">Регион</h2>
+									<a href="#" class="region__subtitle">Очистить</a>
+								</div>
+								<div class="list">
+									<ul class="frist__region">
+										<div class="region-russia">
+											<input type="checkbox" class="checkbox" id="checkbox" />
+											<label for="checkbox">Россия</label>
+										</div>
+									</ul>
+									<ul class="second__region">
+										<li><input type="checkbox" class="checkbox1" id="checkbox1" />
+											<label for="checkbox1">Центр</label>
+										</li>
+										<li><input type="checkbox" class="checkbox2" id="checkbox2" />
+											<label for="checkbox2">Северо-Запад</label>
+										</li>
+										<li>
+											<input type="checkbox" class="checkbox3" id="checkbox3" />
+											<label for="checkbox3">Поволжье</label>
+										</li>
+									</ul>
+									<ul class="third__region">
+										<li>
+											<input type="checkbox" class="checkbox4" id="checkbox4" />
+											<label for="checkbox4">Кировская область</label>
+										</li>
+						
+										<li>
+											<input type="checkbox" class="checkbox5" id="checkbox5" />
+											<label for="checkbox5">Нижегородская область</label>
+										</li>
+										<li>
+											<input type="checkbox" class="checkbox6" id="checkbox6" />
+											<label for="checkbox6">Оренбургская область</label>
+										</li>
+										<li>
+											<input type="checkbox" class="checkbox7" id="checkbox7" />
+											<label for="checkbox7">Республика Татарстан</label>
+										</li>
+									</ul>
+									<ul class="fourth__region">
+										<li class="almetevsk__region region">
+											<input type="checkbox" class="checkbox8" id="checkbox8" />
+											<label for="checkbox8">Альметьевск</label>
+										</li>
+										<li class="bugulma__region region">
+											<input type="checkbox" class="checkbox9" id="checkbox9" />
+											<label for="checkbox9">Бугульма</label>
+										</li>
+										<li class="kazan__region region">
+											<input type="checkbox" class="checkbox10" id="checkbox10" />
+											<label for="checkbox10">Казань</label>
+										</li>
+										<li class="naberej__region region">
+											<input type="checkbox" class="checkbox11" id="checkbox11" />
+											<label for="checkbox11">Набережные Челны</label>
+										</li>
+										<li class="nijnekamsk__region region">
+											<input type="checkbox" class="checkbox12" id="checkbox12" />
+											<label for="checkbox12">Нижнекамск</label>
+										</li>
+									</ul>
+								</div>
+								<div class="region__footer">
+									<p class="region__footer-title">Россия, Татарстан,<span class="region__footer-span">Наережные Челны</span>
+									</p>
+									<a href="#" class="region__footer-btn">Выбрать</a>
+								</div>
+							</div>
+						</div>
+						<div class="scroll__crate">
+							<img src="img/svg__icons/escalat.svg" alt="" class="scroll__crate-img">
+							<div class="crate__block">
+								<p class="crate__block-text">В заказе 5 товаров</p>
+								<b class="cate__block-price">245 810 р.</b>
+							</div>
+							<div class="scrollcrate__minmenu-wrap" id="scrollCrate">
+								<div class="headerr__crate">
+									<h2 class="headerr__crate-title">Состав заказа (36 товаров)</h2>
+									<p class="headerr__crate-subtitle">Очистить заказ</p>
+								</div>
+								<div class="items__crate">
+									<div class="crate__item">
+										<img src="img/product/product__img1.jpg" alt="" class="crate__item-img">
+										<div class="crate__item-name">
+											<p class="crate__name-title">Трансформатор тока ТТИ- 60 0 5 600-5А ИЭК</p>
+											<p class="crate__name-price">в наличии: 1 321 <span class="crate__price-span">шт.</span> </p>
+											<p class="crate__name-seller">Продавец: Самарский Трансформатор</p>
+										</div>
+										<div class="crate__item-price">
+											<p class="crate__price-title">11 049,96 р.</p>
+											<p class="crate__price-subtitle">920,83 р. за шт.</p>
+										</div>
+										<div class="crate__item-number">
+											<svg class="crate__number-icon" width="10" height="3" viewBox="0 0 10 3" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 1.625H10"  stroke-width="2"/>
+											</svg>
+												
+											<p class="crate__number-title">12</p>
+						
+											<svg class="crate__number-icon" width="10" height="11" viewBox="0 0 10 11"  xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 5.625H10"  stroke-width="2"/>
+												<path d="M5 0.3125L5 10.9375"  stroke-width="2"/>
+											</svg>
+						
+											<svg class="crate__number-icon" width="12" height="17" viewBox="0 0 12 17"  xmlns="http://www.w3.org/2000/svg">
+												<rect x="2" y="3.125" width="8" height="12.875"  stroke-width="2"/>
+												<rect x="0.53125" y="2.65625" width="10.9375" height="1.0625"  stroke-width="1.0625"/>
+												<rect x="5" y="1" width="2" height="2.25"  stroke-width="2"/>
+											</svg>
+												
+												
+										</div>
+									</div>
+									<div class="crate__item">
+										<img src="img/product/product__img1.jpg" alt="" class="crate__item-img">
+										<div class="crate__item-name">
+											<p class="crate__name-title">Трансформатор тока ТТИ- 60 0 5 600-5А ИЭК</p>
+											<p class="crate__name-price">в наличии: 1 321 <span class="crate__price-span">шт.</span> </p>
+											<p class="crate__name-seller">Продавец: Самарский Трансформатор</p>
+										</div>
+										<div class="crate__item-price">
+											<p class="crate__price-title">11 049,96 р.</p>
+											<p class="crate__price-subtitle">920,83 р. за шт.</p>
+										</div>
+										<div class="crate__item-number">
+											<svg class="crate__number-icon" width="10" height="3" viewBox="0 0 10 3" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 1.625H10"  stroke-width="2"/>
+											</svg>
+												
+											<p class="crate__number-title">12</p>
+						
+											<svg class="crate__number-icon" width="10" height="11" viewBox="0 0 10 11"  xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 5.625H10"  stroke-width="2"/>
+												<path d="M5 0.3125L5 10.9375"  stroke-width="2"/>
+											</svg>
+						
+											<svg class="crate__number-icon" width="12" height="17" viewBox="0 0 12 17"  xmlns="http://www.w3.org/2000/svg">
+												<rect x="2" y="3.125" width="8" height="12.875"  stroke-width="2"/>
+												<rect x="0.53125" y="2.65625" width="10.9375" height="1.0625"  stroke-width="1.0625"/>
+												<rect x="5" y="1" width="2" height="2.25"  stroke-width="2"/>
+											</svg>
+												
+												
+										</div>
+									</div>
+									<div class="crate__item">
+										<img src="img/product/product__img1.jpg" alt="" class="crate__item-img">
+										<div class="crate__item-name">
+											<p class="crate__name-title">Трансформатор тока ТТИ- 60 0 5 600-5А ИЭК</p>
+											<p class="crate__name-price">в наличии: 1 321 <span class="crate__price-span">шт.</span> </p>
+											<p class="crate__name-seller">Продавец: Самарский Трансформатор</p>
+										</div>
+										<div class="crate__item-price">
+											<p class="crate__price-title">11 049,96 р.</p>
+											<p class="crate__price-subtitle">920,83 р. за шт.</p>
+										</div>
+										<div class="crate__item-number">
+											<svg class="crate__number-icon" width="10" height="3" viewBox="0 0 10 3" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 1.625H10"  stroke-width="2"/>
+											</svg>
+												
+											<p class="crate__number-title">12</p>
+						
+											<svg class="crate__number-icon" width="10" height="11" viewBox="0 0 10 11"  xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 5.625H10"  stroke-width="2"/>
+												<path d="M5 0.3125L5 10.9375"  stroke-width="2"/>
+											</svg>
+						
+											<svg class="crate__number-icon" width="12" height="17" viewBox="0 0 12 17"  xmlns="http://www.w3.org/2000/svg">
+												<rect x="2" y="3.125" width="8" height="12.875"  stroke-width="2"/>
+												<rect x="0.53125" y="2.65625" width="10.9375" height="1.0625"  stroke-width="1.0625"/>
+												<rect x="5" y="1" width="2" height="2.25"  stroke-width="2"/>
+											</svg>
+												
+												
+										</div>
+									</div>
+									<div class="crate__item">
+										<img src="img/product/product__img1.jpg" alt="" class="crate__item-img">
+										<div class="crate__item-name">
+											<p class="crate__name-title">Трансформатор тока ТТИ- 60 0 5 600-5А ИЭК</p>
+											<p class="crate__name-price">в наличии: 1 321 <span class="crate__price-span">шт.</span> </p>
+											<p class="crate__name-seller">Продавец: Самарский Трансформатор</p>
+										</div>
+										<div class="crate__item-price">
+											<p class="crate__price-title">11 049,96 р.</p>
+											<p class="crate__price-subtitle">920,83 р. за шт.</p>
+										</div>
+										<div class="crate__item-number">
+											<svg class="crate__number-icon" width="10" height="3" viewBox="0 0 10 3" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 1.625H10"  stroke-width="2"/>
+											</svg>
+												
+											<p class="crate__number-title">12</p>
+						
+											<svg class="crate__number-icon" width="10" height="11" viewBox="0 0 10 11"  xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 5.625H10"  stroke-width="2"/>
+												<path d="M5 0.3125L5 10.9375"  stroke-width="2"/>
+											</svg>
+						
+											<svg class="crate__number-icon" width="12" height="17" viewBox="0 0 12 17"  xmlns="http://www.w3.org/2000/svg">
+												<rect x="2" y="3.125" width="8" height="12.875"  stroke-width="2"/>
+												<rect x="0.53125" y="2.65625" width="10.9375" height="1.0625"  stroke-width="1.0625"/>
+												<rect x="5" y="1" width="2" height="2.25"  stroke-width="2"/>
+											</svg>
+												
+												
+										</div>
+									</div>
+									<div class="crate__item">
+										<img src="img/product/product__img1.jpg" alt="" class="crate__item-img">
+										<div class="crate__item-name">
+											<p class="crate__name-title">Трансформатор тока ТТИ- 60 0 5 600-5А ИЭК</p>
+											<p class="crate__name-price">в наличии: 1 321 <span class="crate__price-span">шт.</span> </p>
+											<p class="crate__name-seller">Продавец: Самарский Трансформатор</p>
+										</div>
+										<div class="crate__item-price">
+											<p class="crate__price-title">11 049,96 р.</p>
+											<p class="crate__price-subtitle">920,83 р. за шт.</p>
+										</div>
+										<div class="crate__item-number">
+											<svg class="crate__number-icon" width="10" height="3" viewBox="0 0 10 3" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 1.625H10"  stroke-width="2"/>
+											</svg>
+												
+											<p class="crate__number-title">12</p>
+						
+											<svg class="crate__number-icon" width="10" height="11" viewBox="0 0 10 11"  xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 5.625H10"  stroke-width="2"/>
+												<path d="M5 0.3125L5 10.9375"  stroke-width="2"/>
+											</svg>
+						
+											<svg class="crate__number-icon" width="12" height="17" viewBox="0 0 12 17"  xmlns="http://www.w3.org/2000/svg">
+												<rect x="2" y="3.125" width="8" height="12.875"  stroke-width="2"/>
+												<rect x="0.53125" y="2.65625" width="10.9375" height="1.0625"  stroke-width="1.0625"/>
+												<rect x="5" y="1" width="2" height="2.25"  stroke-width="2"/>
+											</svg>
+													
+										</div>
+									</div>
+									<div class="crate__item">
+										<img src="img/product/product__img1.jpg" alt="" class="crate__item-img">
+										<div class="crate__item-name">
+											<p class="crate__name-title">Трансформатор тока ТТИ- 60 0 5 600-5А ИЭК</p>
+											<p class="crate__name-price">в наличии: 1 321 <span class="crate__price-span">шт.</span> </p>
+											<p class="crate__name-seller">Продавец: Самарский Трансформатор</p>
+										</div>
+										<div class="crate__item-price">
+											<p class="crate__price-title">11 049,96 р.</p>
+											<p class="crate__price-subtitle">920,83 р. за шт.</p>
+										</div>
+										<div class="crate__item-number">
+											<svg class="crate__number-icon" width="10" height="3" viewBox="0 0 10 3" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 1.625H10"  stroke-width="2"/>
+											</svg>
+												
+											<p class="crate__number-title">12</p>
+						
+											<svg class="crate__number-icon" width="10" height="11" viewBox="0 0 10 11"  xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 5.625H10"  stroke-width="2"/>
+												<path d="M5 0.3125L5 10.9375"  stroke-width="2"/>
+											</svg>
+						
+											<svg class="crate__number-icon" width="12" height="17" viewBox="0 0 12 17"  xmlns="http://www.w3.org/2000/svg">
+												<rect x="2" y="3.125" width="8" height="12.875"  stroke-width="2"/>
+												<rect x="0.53125" y="2.65625" width="10.9375" height="1.0625"  stroke-width="1.0625"/>
+												<rect x="5" y="1" width="2" height="2.25"  stroke-width="2"/>
+											</svg>
+												
+												
+										</div>
+									</div>
+									<div class="carte__footer">
+										<button class="crate__button">Оформить заказ</button>
+										<p class="carte__footer-text">Всего:<span class="crate__footer-span">36 049,96</span>р.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="scroll__login">
+							<img src="img/svg__icons/login.svg" alt="" class="scroll__login-img">
+							<p class="scroll__login-text">Войти</p>
+							<div class="login__minmenu-scroll">
+								<div class="scroll__minmenu-wrap">
+									<h2 class="card__menu-tittle">Личный кабинет</h2>
+									<div class="card__minmenu-link">
+										<svg class="card__minmenu-icons" width="37" height="30" viewBox="0 0 37 30" fill="none" xmlns="http://www.w3.org/2000/svg" card__minmenu-icons>
+											<path d="M7.4002 15.0001H3.7002V21.2501M16.0335 23.7501H8.63353"
+												stroke="#262526" stroke-width="2" />
+											<path d="M27.1343 17.5001H34.5343" stroke="#262526" stroke-width="2" />
+											<path d="M26.2344 0.00012207V26.2501H36.9999" stroke="#262526"
+												stroke-width="2" />
+											<path
+												d="M26.1331 23.7501C26.1331 26.6623 23.8073 29.0001 20.9665 29.0001C18.1256 29.0001 15.7998 26.6623 15.7998 23.7501C15.7998 20.8379 18.1256 18.5001 20.9665 18.5001C23.8073 18.5001 26.1331 20.8379 26.1331 23.7501Z"
+												stroke="#262526" stroke-width="2" />
+											<path
+												d="M8.86667 24.9999C8.86667 27.2217 7.09304 28.9999 4.93333 28.9999C2.77362 28.9999 1 27.2217 1 24.9999C1 22.778 2.77362 20.9999 4.93333 20.9999C7.09304 20.9999 8.86667 22.778 8.86667 24.9999Z"
+												stroke="#262526" stroke-width="2" />
+											<path
+												d="M20.9666 18.7502L17.2666 2.50024H7.3999V15.0002L14.1832 18.7502H20.9666Z"
+												stroke="#262526" stroke-width="2" />
+										</svg>
+										Закзазы
+									</div>
+									<a href="#" class="card__minmenu-link">
+										<svg class="card__minmenu-icons" width="15" height="20" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg" card__minmenu-icons>
+											<path
+												d="M6.5625 8H7.5625V7V1H14V19H1V8H6.5625ZM5.5625 6H2.30823L4.01079 4.18394L5.5625 2.52878V6ZM3.75 16H8.4375V14H3.75V16ZM3.75 13H11.25V11H3.75V13Z"
+												stroke="#041214" stroke-width="2" />
+										</svg>
+										Заявки на закупку
+									</a>
+									<a href="#" class="card__minmenu-link">
+										<svg width="18" height="20" viewBox="0 0 18 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg" class="card__minmenu-icons">
+											<path
+												d="M17 15.6215V19H1V15.6215L6.06778 13.1189L6.625 12.8437V12.2222V11.1111V10.7745L6.4214 10.5063L6.10521 10.09C5.34763 9.09232 4.9375 7.87408 4.9375 6.62139V5.52876C4.9375 3.91654 5.89087 2.45688 7.36712 1.80886C8.40778 1.35206 9.59221 1.35206 10.6329 1.80886C12.1091 2.45688 13.0625 3.91654 13.0625 5.52876V6.62139C13.0625 7.87408 12.6524 9.09232 11.8948 10.09L11.5786 10.5063L11.375 10.7745V11.1111V12.2222V12.8437L11.9322 13.1189L17 15.6215Z"
+												stroke="#041214" stroke-width="2" />
+										</svg>
+										Профиль
+									</a>
+									<a href="#" class="card__minmenu-link card__exit">
+										<svg class="card__minmenu-icons" width="24" height="22" viewBox="0 0 24 22"
+											fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M14.6501 8V1H1.00015V21H14.6501V14" stroke="#262526"
+												stroke-width="2" />
+											<path
+												d="M17.8001 6.55554L22.0001 11M22.0001 11L17.8001 15.4444M22.0001 11H9.40015"
+												stroke="#262526" stroke-width="2" />
+										</svg>
+										Выход
+									</a>
+		
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header__scroll -->
+
+
+	<!--//header__scroll  -->
+	<section class="tender">
+		<div class="container">
+			<h1 class="tender__title">Промышленные товаровы от поставщиков</h1>
+			<div class="tender__items">
+				<div class="tender__item">
+					<img src="img/body__icons/1.svg" alt="" class="tender__item-img">
+					<div class="tender__item-text">
+						<a href="" class="tender__item-link">Трансформаторы </a>
+						<span class="tender__link-point">(16 320)</span>
+					</div>
+				</div>
+				<div class="tender__item">
+					<img src="img/body__icons/2.svg" alt="" class="tender__item-img">
+					<div class="tender__item-text">
+						<a href="" class="tender__item-link">Инструмент </a>
+						<span class="tender__link-point">(5 320)</span>
+					</div>
+				</div>
+				<div class="tender__item">
+					<img src="img/body__icons/3.svg" alt="" class="tender__item-img">
+					<div class="tender__item-text">
+						<a href="" class="tender__item-link">Низковольтное оборудование </a>
+						<span class="tender__link-point">(1 020)</span>
+					</div>
+				</div>
+				<div class="tender__item">
+					<img src="img/body__icons/4.svg" alt="" class="tender__item-img">
+					<div class="tender__item-text">
+						<a href="" class="tender__item-link">Светотехника </a>
+						<span class="tender__link-point">(10 300)</span>
+					</div>
+				</div>
+				<div class="tender__item">
+					<img src="img/body__icons/5.svg" alt="" class="tender__item-img">
+					<div class="tender__item-text">
+						<a href="" class="tender__item-link">Обогрев и вентиляция </a>
+						<span class="tender__link-point">(4 670)</span>
+					</div>
+				</div>
+				<div class="tender__item">
+					<img src="img/body__icons/6.svg" alt="" class="tender__item-img">
+					<div class="tender__item-text">
+						<a href="" class="tender__item-link">Кабели и провода</a> 
+						<span class="tender__link-point">(520)</span>
+					</div>
+				</div>
+				<div class="tender__item">
+					<img src="img/body__icons/7.svg" alt="" class="tender__item-img">
+					<div class="tender__item-text">
+						<a href="" class="tender__item-link">Шкафы и щиты </a>
+						<span class="tender__link-point">(8 100)</span>
+					</div>
+				</div>
+				<div class="tender__item">
+					<img src="img/body__icons/8.svg" alt="" class="tender__item-img">
+					<div class="tender__item-text">
+						<a href="" class="tender__item-link">Розетки и выключатели </a>
+						<span class="tender__link-point">(3 460)</span>
+					</div>
+				</div>
+				<div class="tender__item">
+					<img src="img/body__icons/9.svg" alt="" class="tender__item-img">
+					<div class="tender__item-text">
+						<a href="" class="tender__item-link">Безопасность </a>
+						<span class="tender__link-point">(120)</span>
+					</div>
+				</div>
+				<div class="tender__item">
+					<img src="img/body__icons/10.svg" alt="" class="tender__item-img">
+					<div class="tender__item-text">
+						<a href="" class="tender__item-link">Оборудование 6-10кВ </a>
+						<span class="tender__link-point">(6 320)</span>
+					</div>
+				</div>
+				<div class="tender__item">
+					<img src="img/body__icons/11.svg" alt="" class="tender__item-img">
+					<div class="tender__item-text">
+						<a href="" class="tender__item-link">Изделия для электромонтажа </a>
+						<span class="tender__link-point">(2 380)</span>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /Tender -->
+	<section class="offers">
+		<div class="container slider">
+			<div class="slider single-item slider__items">
+				<div class="offers__item">
+					<div class="offers__info">
+						<img src="img/body__icons/1.svg" alt="" class="offers__info-icon">
+						<h2 class="offers__info-title">Силовые масляные
+							трансформаторы серии ТМГ</h2>
+						<p class="offers__info-subtitle">Силовые (распределительные) масляные трансформаторы серии ТМГ
+							столбового исполнения мощностью 25-160 кВА предназначены для работы в электросетях
+							напряжением 6
+							или 10 кВ в открытых электроустановках в условиях умеренного и умеренно-холодного климата
+						</p>
+						<div class="offers__links">
+							<a href="#" class="offers__link">Перейти</a>
+							<svg width="22" height="12" viewBox="0 0 22 12" class="product__next"
+							xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 6H20M20 6L15 1M20 6L15 11" stroke-width="2" />
+						</svg>
+						</div>
+					</div>
+				</div>
+				<div class="offers__item">
+					<div class="offers__info">
+						<img src="img/body__icons/1.svg" alt="" class="offers__info-icon">
+						<h2 class="offers__info-title">Силовые масляные
+							трансформаторы серии ТМГ</h2>
+						<p class="offers__info-subtitle">Силовые (распределительные) масляные трансформаторы серии ТМГ
+							столбового исполнения мощностью 25-160 кВА предназначены для работы в электросетях
+							напряжением 6
+							или 10 кВ в открытых электроустановках в условиях умеренного и умеренно-холодного климата
+						</p>
+						<div class="offers__links">
+							<a href="#" class="offers__link">Перейти</a>
+							<svg width="22" height="12" viewBox="0 0 22 12" class="product__next"
+							xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 6H20M20 6L15 1M20 6L15 11" stroke-width="2" />
+						</svg>
+						</div>
+					</div>
+				</div>
+				<div class="offers__item">
+					<div class="offers__info">
+						<img src="img/body__icons/1.svg" alt="" class="offers__info-icon">
+						<h2 class="offers__info-title">Силовые масляные
+							трансформаторы серии ТМГ</h2>
+						<p class="offers__info-subtitle">Силовые (распределительные) масляные трансформаторы серии ТМГ
+							столбового исполнения мощностью 25-160 кВА предназначены для работы в электросетях
+							напряжением 6
+							или 10 кВ в открытых электроустановках в условиях умеренного и умеренно-холодного климата
+						</p>
+						<div class="offers__links">
+							<a href="#" class="offers__link">Перейти</a>
+							<svg width="22" height="12" viewBox="0 0 22 12" class="product__next"
+							xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 6H20M20 6L15 1M20 6L15 11" stroke-width="2" />
+						</svg>
+						</div>
+					</div>
+				</div>
+				<div class="offers__item">
+					<div class="offers__info ">
+						<img src="img/body__icons/1.svg" alt="" class="offers__info-icon">
+						<h2 class="offers__info-title">Силовые масляные
+							трансформаторы серии ТМГ</h2>
+						<p class="offers__info-subtitle">Силовые (распределительные) масляные трансформаторы серии ТМГ
+							столбового исполнения мощностью 25-160 кВА предназначены для работы в электросетях
+							напряжением 6
+							или 10 кВ в открытых электроустановках в условиях умеренного и умеренно-холодного климата
+						</p>
+						<div class="offers__links">
+							<a href="#" class="offers__link">Перейти</a>
+							<svg width="22" height="12" viewBox="0 0 22 12" class="product__next"
+							xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 6H20M20 6L15 1M20 6L15 11" stroke-width="2" />
+						</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!-- /Offers -->
+	<section class="product">
+		<div class="container product__wrap">
+			<div class="product__up">
+				<h3 class="product__title">Трансформаторы</h3>
+				<div class="product__links">
+					<a href="#" class="product__link">Трансформаторы тока</a>
+					<a href="#" class="product__link">Трансформаторы напряжения</a>
+					<a href="#" class="product__link">Силовые трансформаторы</a>
+					<a href="#" class="product__link link__next">Смотреть все
+						<svg width="22" height="12" viewBox="0 0 22 12" class="product__next"
+							xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 6H20M20 6L15 1M20 6L15 11" stroke-width="2" />
+						</svg>
+					</a>
+
+				</div>
+			</div>
+			<div class="product__down slide1 single-item">
+				<div class="product__card">
+					<div class="product__hover">
+						<img class="product__hover-img" src="img/hover.svg" alt="">
+						<p class="product__hover-text">Быстрый заказ</p>
+					</div>
+					<img src="img/product/product__img1.jpg" alt="" class="product__card-img">
+					<div class="product__card-name">Артикул: 14129497</div>
+					<div class="product__card-title">Трансформатор тока (ТОЛ)ТЛК-СТ-10-ТПЛ (ТПЛ-10с)
+					</div>
+					<div class="product__card-text">Средняя цена</div>
+					<div class="product__card-price">140 590,00 р. за шт.</div>
+					<a class="product__card-btn">3<p class="card__btn-text">предложение</p></a>
+				</div>
+				<div class="product__card">
+					<div class="product__hover">
+						<img class="product__hover-img" src="img/hover.svg" alt="">
+						<p class="product__hover-text">Быстрый заказ</p>
+					</div>
+					<img src="img/product/product__img2.jpg" alt="" class="product__card-img">
+					<div class="product__card-name">Артикул: 14129497</div>
+					<h3 class="product__card-title">Трансформатор тока ТТИ- 60 0 5 600-5А ИЭК
+					</h3>
+					<div class="product__card-text">Средняя цена</div>
+					<div class="product__card-price">920,83 р. за шт.</div>
+					<a class="product__card-btn">3<p class="card__btn-text">предложение</p></a>
+				</div>
+				<div class="product__card">
+					<div class="product__hover">
+						<img class="product__hover-img" src="img/hover.svg" alt="">
+						<p class="product__hover-text">Быстрый заказ</p>
+					</div>
+					<img src="img/product/product__img3.jpg" alt="" class="product__card-img">
+					<div class="product__card-name">Артикул: 14129497</div>
+					<h3 class="product__card-title">Трансформатор тока ТОЛ-10 кВ класс точности 0,2S
+					</h3>
+					<div class="product__card-text">Средняя цена</div>
+					<div class="product__card-price">12 920,83 р. за шт.</div>
+					<a class="product__card-btn">3<p class="card__btn-text">предложение</p></a>
+				</div>
+				<div class="product__card">
+					<div class="product__hover">
+						<img class="product__hover-img" src="img/hover.svg" alt="">
+						<p class="product__hover-text">Быстрый заказ</p>
+					</div>
+					<img src="img/product/product__img4.jpg" alt="" class="product__card-img">
+					<div class="product__card-name">Артикул: 14129497</div>
+					<div class="product__card-title">Трансформатор силовой масляный ТМГ - 250 / 10-0.4
+					</div>
+					<div class="product__card-text">Средняя цена</div>
+					<div class="product__card-price">209 379,00 р. за шт.</div>
+					<a class="product__card-btn">3<p class="card__btn-text">предложение</p></a>
+				</div>
+				<div class="product__card">
+					<div class="product__hover">
+						<img class="product__hover-img" src="img/hover.svg" alt="">
+						<p class="product__hover-text">Быстрый заказ</p>
+					</div>
+					<img src="img/product/product__img1.jpg" alt="" class="product__card-img">
+					<div class="product__card-name">Артикул: 14129497</div>
+					<div class="product__card-title">Трансформатор тока (ТОЛ)ТЛК-СТ-10-ТПЛ (ТПЛ-10с)
+					</div>
+					<div class="product__card-text">Средняя цена</div>
+					<div class="product__card-price">140 590,00 р. за шт.</div>
+					<a class="product__card-btn">3<p class="card__btn-text">предложение</p></a>
+				</div>
+				<div class="product__card">
+					<div class="product__hover">
+						<img class="product__hover-img" src="img/hover.svg" alt="">
+						<p class="product__hover-text">Быстрый заказ</p>
+					</div>
+					<img src="img/product/product__img2.jpg" alt="" class="product__card-img">
+					<div class="product__card-name">Артикул: 14129497</div>
+					<h3 class="product__card-title">Трансформатор тока ТТИ- 60 0 5 600-5А ИЭК
+					</h3>
+					<div class="product__card-text">Средняя цена</div>
+					<div class="product__card-price">920,83 р. за шт.</div>
+					<a class="product__card-btn">3<p class="card__btn-text">предложение</p></a>
+				</div>
+				<div class="product__card">
+					<div class="product__hover">
+						<img class="product__hover-img" src="img/hover.svg" alt="">
+						<p class="product__hover-text">Быстрый заказ</p>
+					</div>
+					<img src="img/product/product__img3.jpg" alt="" class="product__card-img">
+					<div class="product__card-name">Артикул: 14129497</div>
+					<h3 class="product__card-title">Трансформатор тока ТОЛ-10 кВ класс точности 0,2S
+					</h3>
+					<div class="product__card-text">Средняя цена</div>
+					<div class="product__card-price">12 920,83 р. за шт.</div>
+					<a class="product__card-btn">3<p class="card__btn-text">предложение</p></a>
+				</div>
+				<div class="product__card">
+					<div class="product__hover">
+						<img class="product__hover-img" src="img/hover.svg" alt="">
+						<p class="product__hover-text">Быстрый заказ</p>
+					</div>
+					<img src="img/product/product__img4.jpg" alt="" class="product__card-img">
+					<div class="product__card-name">Артикул: 14129497</div>
+					<div class="product__card-title">Трансформатор силовой масляный ТМГ - 250 / 10-0.4
+					</div>
+					<div class="product__card-text">Средняя цена</div>
+					<div class="product__card-price">209 379,00 р. за шт.</div>
+					<a class="product__card-btn">3<p class="card__btn-text">предложение</p></a>
+				</div>
+			</div>
+			<div class="product__bottons">
+					<svg class="next__svg next__svg1" width="18" height="32" viewBox="0 0 18 32"
+						xmlns="http://www.w3.org/2000/svg">
+						<path d="M1 1L16 16L1 31" stroke-width="2" />
+					</svg>
+					<svg class="prev__svg prev__svg1" width="18" height="32" viewBox="0 0 18 32"
+						xmlns="http://www.w3.org/2000/svg">
+						<path d="M17 31L2 16L17 1" stroke-width="2" />
+					</svg>
+			</div>
+		</div>
+	</section>
+	<!-- /Product -->
+	<section class="product">
+		<div class="container product__wrap">
+			<div class="product__up">
+				<h3 class="product__title">Светотехника</h3>
+				<div class="product__links">
+					<a href="#" class="product__link">Наружное и ландшафтное освещение</a>
+					<a href="#" class="product__link">Интерьерное освещение</a>
+					<a href="#" class="product__link">Настенно-потолочные светильники</a>
+					<a href="#" class="product__link link__next">Смотреть все
+						<svg width="22" height="12" viewBox="0 0 22 12" class="product__next"
+							xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 6H20M20 6L15 1M20 6L15 11" stroke-width="2" />
+						</svg>
+					</a>
+
+				</div>
+			</div>
+			<div class="product__down slide2 single-item">
+				<div class="product__card">
+					<div class="product__hover">
+						<img class="product__hover-img" src="img/hover.svg" alt="">
+						<p class="product__hover-text">Быстрый заказ</p>
+					</div>
+					<img src="img/product/product__img5.jpg" alt="" class="product__card-img">
+					<div class="product__card-name">Артикул: 14129497</div>
+					<h3 class="product__card-title">Лампа Navigator 14 123 NLL-A60-10-230-4K-E27-DIMM
+					</h3>
+					<div class="product__card-text">Средняя цена</div>
+					<div class="product__card-price">273,54 р. за шт.</div>
+					<a class="product__card-btn">3<p class="card__btn-text">предложение</p></a>
+				</div>
+				<div class="product__card">
+					<div class="product__hover">
+						<img class="product__hover-img" src="img/hover.svg" alt="">
+						<p class="product__hover-text">Быстрый заказ</p>
+					</div>
+					<img src="img/product/product__img5.jpg" alt="" class="product__card-img">
+					<div class="product__card-name">Артикул: 14129497</div>
+					<h3 class="product__card-title">Лампа Navigator 14 123 NLL-A60-10-230-4K-E27-DIMM
+					</h3>
+					<div class="product__card-text">Средняя цена</div>
+					<div class="product__card-price">273,54 р. за шт.</div>
+					<a class="product__card-btn">3<p class="card__btn-text">предложение</p></a>
+				</div>
+				<div class="product__card">
+					<div class="product__hover">
+						<img class="product__hover-img" src="img/hover.svg" alt="">
+						<p class="product__hover-text">Быстрый заказ</p>
+					</div>
+					<img src="img/product/product__img5.jpg" alt="" class="product__card-img">
+					<div class="product__card-name">Артикул: 14129497</div>
+					<h3 class="product__card-title">Лампа Navigator 14 123 NLL-A60-10-230-4K-E27-DIMM
+					</h3>
+					<div class="product__card-text">Средняя цена</div>
+					<div class="product__card-price">273,54 р. за шт.</div>
+					<a class="product__card-btn">3<p class="card__btn-text">предложение</p></a>
+				</div>
+				<div class="product__card">
+					<div class="product__hover">
+						<img class="product__hover-img" src="img/hover.svg" alt="">
+						<p class="product__hover-text">Быстрый заказ</p>
+					</div>
+					<img src="img/product/product__img5.jpg" alt="" class="product__card-img">
+					<div class="product__card-name">Артикул: 14129497</div>
+					<h3 class="product__card-title">Лампа Navigator 14 123 NLL-A60-10-230-4K-E27-DIMM
+					</h3>
+					<div class="product__card-text">Средняя цена</div>
+					<div class="product__card-price">273,54 р. за шт.</div>
+					<a class="product__card-btn">3<p class="card__btn-text">предложение</p></a>
+				</div>
+				<div class="product__card">
+					<div class="product__hover">
+						<img class="product__hover-img" src="img/hover.svg" alt="">
+						<p class="product__hover-text">Быстрый заказ</p>
+					</div>
+					<img src="img/product/product__img6.png" alt="" class="product__card-img">
+					<div class="product__card-name">Артикул: 14129497</div>
+					<h3 class="product__card-title">Светильник LGD-LUMOS-R62-9W Day4000 (WH, 25 deg)
+					</h3>
+					<div class="product__card-text">Средняя цена</div>
+					<div class="product__card-price">2 242,65 р. за шт.</div>
+					<a class="product__card-btn">3<p class="card__btn-text">предложение</p></a>
+				</div>
+				<div class="product__card">
+					<div class="product__hover">
+						<img class="product__hover-img" src="img/hover.svg" alt="">
+						<p class="product__hover-text">Быстрый заказ</p>
+					</div>
+					<img src="img/product/product__img7.png" alt="" class="product__card-img">
+					<div class="product__card-name">Артикул: 14129497</div>
+					<h3 class="product__card-title">Светильник Navigator 61 447 DSP-04S-1200-IP65-2хT8-G13
+					</h3>
+					<div class="product__card-text">Средняя цена</div>
+					<div class="product__card-price">2 242,65 р. за шт.</div>
+					<a class="product__card-btn">3<p class="card__btn-text">предложение</p></a>
+				</div>
+				<div class="product__card">
+					<div class="product__hover">
+						<img class="product__hover-img" src="img/hover.svg" alt="">
+						<p class="product__hover-text">Быстрый заказ</p>
+					</div>
+					<img src="img/product/product__img8.jpg" alt="" class="product__card-img">
+					<div class="product__card-name">Артикул: 14129497</div>
+					<h3 class="product__card-title">Светильник Navigator 14 154 NFL-01-200-6.5K-LED
+					</h3>
+					<div class="product__card-text">Средняя цена</div>
+					<div class="product__card-price">4 142,65 р. за шт.</div>
+					<a class="product__card-btn">3<p class="card__btn-text">предложение</p></a>
+				</div>
+			</div>
+			<div class="product__bottons">
+					<svg class="next__svg next__svg2" width="18" height="32" viewBox="0 0 18 32"
+						xmlns="http://www.w3.org/2000/svg">
+						<path d="M1 1L16 16L1 31" stroke-width="2" />
+					</svg>
+					<svg class="prev__svg prev__svg2" width="18" height="32" viewBox="0 0 18 32"
+						xmlns="http://www.w3.org/2000/svg">
+						<path d="M17 31L2 16L17 1" stroke-width="2" />
+					</svg>
+			</div>
+		</div>
+	</section>
+	<!-- /Product -->
+	<section class="product">
+		<div class="container product__wrap">
+			<div class="product__up">
+				<h3 class="product__title">Шкафы и щиты</h3>
+				<div class="product__links">
+					<a href="#" class="product__link">Пластиковые боксы</a>
+					<a href="#" class="product__link">Металлические щиты IP 30-IP 54</a>
+					<a href="#" class="product__link">Распределительные щиты и боксы ABB</a>
+					<a href="#" class="product__link link__next">Смотреть все
+						<svg width="22" height="12" viewBox="0 0 22 12" class="product__next"
+							xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 6H20M20 6L15 1M20 6L15 11" stroke-width="2" />
+						</svg>
+					</a>
+
+				</div>
+			</div>
+			<div class="product__down slide3 single-item">
+				<div class="product__card">
+					<div class="product__hover">
+						<img class="product__hover-img" src="img/hover.svg" alt="">
+						<p class="product__hover-text">Быстрый заказ</p>
+					</div>
+					<div class="product__hover">
+						<img class="product__hover-img" src="img/hover.svg" alt="">
+						<p class="product__hover-text">Быстрый заказ</p>
+					</div>
+					<img src="img/product/product__img9.jpg" alt="" class="product__card-img">
+					<div class="product__card-name">Артикул: 14129497</div>
+					<h3 class="product__card-title">Щит навесной Узола ЩРН3-2х12-УХЛ4 24 модуля с металлической
+						дверцей IP31 серый
+					</h3>
+					<div class="product__card-text">Средняя цена</div>
+					<div class="product__card-price">3 145,00 р. за шт.</div>
+					<a class="product__card-btn">3<p class="card__btn-text">предложение</p></a>
+				</div>
+				<div class="product__card">
+					<div class="product__hover">
+						<img class="product__hover-img" src="img/hover.svg" alt="">
+						<p class="product__hover-text">Быстрый заказ</p>
+					</div>
+					<img src="img/product/product__img10.jpg" alt="" class="product__card-img">
+					<div class="product__card-name">Артикул: 14129497</div>
+					<h3 class="product__card-title card10">Щит навесной Узола ЩРН3-2х12-УХЛ4 24 модуля с металлической
+						дверцей IP31 серый
+
+					</h3>
+					<div class="product__card-text">Средняя цена</div>
+					<div class="product__card-price">8 145,00 р. за шт.</div>
+					<a class="product__card-btn">3<p class="card__btn-text">предложение</p></a>
+				</div>
+				<div class="product__card">
+					<div class="product__hover">
+						<img class="product__hover-img" src="img/hover.svg" alt="">
+						<p class="product__hover-text">Быстрый заказ</p>
+					</div>
+					<img src="img/product/product__img11.jpg" alt="" class="product__card-img">
+					<div class="product__card-name">Артикул: 14129497</div>
+					<h3 class="product__card-title">Щит навесной Узола ЩРН3-2х12-УХЛ4 24 модуля с металлической
+						дверцей IP31 серый
+					</h3>
+					<div class="product__card-text">Средняя цена</div>
+					<div class="product__card-price">1 975,00 р. за шт.</div>
+					<a class="product__card-btn">3<p class="card__btn-text">предложение</p></a>
+				</div>
+				<div class="product__card">
+					<div class="product__hover">
+						<img class="product__hover-img" src="img/hover.svg" alt="">
+						<p class="product__hover-text">Быстрый заказ</p>
+					</div>
+					<img src="img/product/product__img12.jpg" alt="" class="product__card-img">
+					<div class="product__card-name">Артикул: 14129497</div>
+					<h3 class="product__card-title">Щит навесной Узола ЩРН3-2х12-УХЛ4 24 модуля с металлической
+						дверцей IP31 серый
+					</h3>
+					<div class="product__card-text">Средняя цена</div>
+					<div class="product__card-price">1 193,00 р. за шт.</div>
+					<a class="product__card-btn">3<p class="card__btn-text">предложение</p></a>
+				</div>
+				<div class="product__card">
+					<div class="product__hover">
+						<img class="product__hover-img" src="img/hover.svg" alt="">
+						<p class="product__hover-text">Быстрый заказ</p>
+					</div>
+					<div class="product__hover">
+						<img class="product__hover-img" src="img/hover.svg" alt="">
+						<p class="product__hover-text">Быстрый заказ</p>
+					</div>
+					<img src="img/product/product__img9.jpg" alt="" class="product__card-img">
+					<div class="product__card-name">Артикул: 14129497</div>
+					<h3 class="product__card-title">Щит навесной Узола ЩРН3-2х12-УХЛ4 24 модуля с металлической
+						дверцей IP31 серый
+					</h3>
+					<div class="product__card-text">Средняя цена</div>
+					<div class="product__card-price">3 145,00 р. за шт.</div>
+					<a class="product__card-btn">3<p class="card__btn-text">предложение</p></a>
+				</div>
+				<div class="product__card">
+					<div class="product__hover">
+						<img class="product__hover-img" src="img/hover.svg" alt="">
+						<p class="product__hover-text">Быстрый заказ</p>
+					</div>
+					<img src="img/product/product__img10.jpg" alt="" class="product__card-img">
+					<div class="product__card-name">Артикул: 14129497</div>
+					<h3 class="product__card-title">Щит навесной Узола ЩРН3-2х12-УХЛ4 24 модуля с металлической
+						дверцей IP31 серый
+					</h3>
+					<div class="product__card-text">Средняя цена</div>
+					<div class="product__card-price">8 145,00 р. за шт.</div>
+					<a class="product__card-btn">3<p class="card__btn-text">предложение</p></a>
+				</div>
+				<div class="product__card">
+					<div class="product__hover">
+						<img class="product__hover-img" src="img/hover.svg" alt="">
+						<p class="product__hover-text">Быстрый заказ</p>
+					</div>
+					<img src="img/product/product__img11.jpg" alt="" class="product__card-img">
+					<div class="product__card-name">Артикул: 14129497</div>
+					<h3 class="product__card-title">Щит навесной Узола ЩРН3-2х12-УХЛ4 24 модуля с металлической
+						дверцей IP31 серый
+					</h3>
+					<div class="product__card-text">Средняя цена</div>
+					<div class="product__card-price">1 975,00 р. за шт.</div>
+					<a class="product__card-btn">3<p class="card__btn-text">предложение</p></a>
+				</div>
+				<div class="product__card">
+					<div class="product__hover">
+						<img class="product__hover-img" src="img/hover.svg" alt="">
+						<p class="product__hover-text">Быстрый заказ</p>
+					</div>
+					<img src="img/product/product__img12.jpg" alt="" class="product__card-img">
+					<div class="product__card-name">Артикул: 14129497</div>
+					<h3 class="product__card-title">Щит навесной Узола ЩРН3-2х12-УХЛ4 24 модуля с металлической
+						дверцей IP31 серый
+					</h3>
+					<div class="product__card-text">Средняя цена</div>
+					<div class="product__card-price">1 193,00 р. за шт.</div>
+					<a class="product__card-btn">3<p class="card__btn-text">предложение</p></a>
+				</div>
+				<div class="product__card">
+					<div class="product__hover">
+						<img class="product__hover-img" src="img/hover.svg" alt="">
+						<p class="product__hover-text">Быстрый заказ</p>
+					</div>
+					<img src="img/product/product__img11.jpg" alt="" class="product__card-img">
+					<div class="product__card-name">Артикул: 14129497</div>
+					<h3 class="product__card-title">Щит навесной Узола ЩРН3-2х12-УХЛ4 24 модуля с металлической
+						дверцей IP31 серый
+					</h3>
+					<div class="product__card-text">Средняя цена</div>
+					<div class="product__card-price">1 975,00 р. за шт.</div>
+					<a class="product__card-btn">3<p class="card__btn-text">предложение</p></a>
+				</div>
+				<div class="product__card">
+					<div class="product__hover">
+						<img class="product__hover-img" src="img/hover.svg" alt="">
+						<p class="product__hover-text">Быстрый заказ</p>
+					</div>
+					<img src="img/product/product__img12.jpg" alt="" class="product__card-img">
+					<div class="product__card-name">Артикул: 14129497</div>
+					<h3 class="product__card-title">Щит навесной Узола ЩРН3-2х12-УХЛ4 24 модуля с металлической
+						дверцей IP31 серый
+					</h3>
+					<div class="product__card-text">Средняя цена</div>
+					<div class="product__card-price">1 193,00 р. за шт.</div>
+					<a class="product__card-btn">3<p class="card__btn-text">предложение</p></a>
+				</div>
+			</div>
+			<div class="product__bottons">
+					<svg class="next__svg next__svg3" width="18" height="32" viewBox="0 0 18 32"
+						xmlns="http://www.w3.org/2000/svg">
+						<path d="M1 1L16 16L1 31" stroke-width="2" />
+					</svg>
+					<svg class="prev__svg prev__svg3" width="18" height="32" viewBox="0 0 18 32"
+						xmlns="http://www.w3.org/2000/svg">
+						<path d="M17 31L2 16L17 1" stroke-width="2" />
+					</svg>
+			</div>
+		</div>
+	</section>
+	<!-- /Product -->
+	<!-- General -->
+	<section class="general">
+		<div class="container">
+			<div class="general__wrap">
+				<div class="general__categgory">
+					<h3 class="general__categgory-title general__title">Все категории</h3>
+					<div class="general__block-wrap">
+						<div class="general__categgory-blockleft">
+							<a href="#" class="general__categgory-link">Кабели и провода</a>
+							<a href="#" class="general__categgory-link">Светотехника</a>
+							<a href="#" class="general__categgory-link">Шкафы и щиты</a>
+							<a href="#" class="general__categgory-link">Оборудование 6-10кВ</a>
+							<a href="#" class="general__categgory-link">Инструмент</a>
+							<a href="#" class="general__categgory-link">Обогрев и вентиляция</a>
+						</div>
+						<div class="general__categgory-blockright">
+							<a href="#" class="general__categgory-link">Розетки и выключатели</a>
+							<a href="#" class="general__categgory-link">Изделия для электромонтажа</a>
+							<a href="#" class="general__categgory-link">Низковольтное оборудование</a>
+							<a href="#" class="general__categgory-link">Трансформаторы</a>
+							<a href="#" class="general__categgory-link">Безопасность</a>
+						</div>
+					</div>
+				</div>
+				<div class="general__info">
+					<h3 class="general__info-title general__title">Информация</h3>
+					<div class="general__info-links">
+						<a href="#" class="general__info-link">О проекте</a>
+						<a href="#" class="general__info-link">Поставщикам</a>
+						<a href="#" class="general__info-link">Покупателям</a>
+						<a href="#" class="general__info-link">Условия оплаты</a>
+						<a href="#" class="general__info-link">Доставка</a>
+						<a href="#" class="general__info-link">Гарантии</a>
+					</div>
+
+				</div>
+				<div class="general__contact">
+					<h3 class="general__contact-title general__title">Контакты</h3>
+					<div class="general__contact-links">
+						<p class="general__contact-text">Электронная почта для связи</p>
+						<a href="#" class="general__contact-mail">mail@onlinesklad.ru</a>
+						<div class="general__info-socials">
+							<a href="#" class="general__social-icon"><img src="img/social__link/twetter.svg" alt=""></a>
+							<a href="#" class="general__social-icon"><img src="img/social__link/vk.svg" alt=""></a>
+							<a href="#" class="general__social-icon"><img src="img/social__link/insta.svg" alt=""></a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /general -->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__wrap">
+				<div class="footer__links">
+					<a href="#" class="footer__link">Политика конфиденциальности</a>
+					<a href="#" class="footer__link">Пользовательское соглашение</a>
+					<a href="#" class="footer__link">Дисклеймер</a>
+				</div>
+				<p class="footer__sign">© 2020 ООО "ЭЛЕКТРОЯР"</p>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+
+
+
+
+
+
+
+	<script src="js/jquery-1.12.4.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>
